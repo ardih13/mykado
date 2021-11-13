@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">My Kado</string>
+    <string name="hospital_name">RS Restu Kasih</string>
+    <string name="hospital_address">Jl. Raya Bogor KM 19 No. 3A Jakarta Timur</string>
+    <string name="image">image</string>
+    <string name="text_menu">Menu</string>
+
+    <!--   Menu -->
+    <string name="menu_registration">Registrasi\nLayanan</string>
+    <string name="menu_schedule">Jadwal\nDokter</string>
+    <string name="menu_history">History\nRegistrasi</string>
+    <string name="title">Title</string>
+
+
+    <string name="nama_pasien"><![CDATA[ Nama Pasien <font color="#e03c4f">*</font>]]></string>
+    <string name="jenis_kelamin"><![CDATA[ Jenis Kelamin <font color="#e03c4f">*</font>]]></string>
+    <string name="tempat_lahir"><![CDATA[ Tempat Lahir <font color="#e03c4f">*</font>]]></string>
+
+    <string name="tanggal_lahir"><![CDATA[ Tanggal Lahir <font color="#e03c4f">*</font>]]></string>
+    <string name="no_handphone_whatsapp"><![CDATA[ No. Handphone / Whatsapp <font color="#e03c4f">*</font>]]></string>
+    <string name="pekerjaan"><![CDATA[ Pekerjaan <font color="#e03c4f">*</font>]]></string>
+
+    <string name="penanggung_jawab"><![CDATA[ Penanggung Jawab <font color="#e03c4f">*</font>]]></string>
+    <string name="alamat"><![CDATA[ Alamat <font color="#e03c4f">*</font>]]></string>
+    <string name="pilih_dokter"><![CDATA[ Pilih Dokter <font color="#e03c4f">*</font>]]></string>
+    <string name="semoga_lekas_sembuh">Semoga Lekas Sembuh</string>
+    <string name="tanggal_daftar">Tanggal Daftar</string>
+    <string name="nama">Nama</string>
+    <string name="txt_jenis_kelamin">Jenis Kelamin</string>
+    <string name="txt_tempat_lahir">Tempat Lahir</string>
+    <string name="txt_tanggal_lahir">Tanggal Lahir</string>
+    <string name="txt_pekerjaan">Pekerjaan</string>
+    <string name="txt_penanggung_jawab">Penanggung Jawab</string>
+    <string name="txt_alamat">Alamat</string>
+    <string name="txt_dokter">Dokter</string>
+    <string name="txt_spesialis">Spesialis</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="kamu_telah_berhasil_melakukan_registrasi_layanan">Kamu telah berhasil melakukan registrasi layanan</string>
+    <string name="registrasi_berhasil">Registrasi Berhasil</string>
+    <string name="ok">Ok</string>
+
+
 </resources>

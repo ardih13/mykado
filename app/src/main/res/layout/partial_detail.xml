@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/tanggal_daftar"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvTanggalDaftar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="13-11-2021" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/nama"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Ardi" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_jenis_kelamin"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Laki-Laki" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_tempat_lahir"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvTempatLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Jakarta" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_tanggal_lahir"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvTanggalLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="01-03-1996" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="No. Handphone"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvNoHandphone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="089898888887" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_pekerjaan"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvPekerjaan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Karyawan Swasta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_penanggung_jawab"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvPenanggungJawab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Hidayat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_alamat"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Jl. Raya Bogor" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_dokter"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvDokter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Dr. Gigi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_spesialis"
+            android:textColor="@color/color_grey_3D505C"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tvSpesialis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_grey_1F282E"
+            android:textSize="@dimen/text_14"
+            tools:text="Gigi" />
+
+    </LinearLayout>
+
+</LinearLayout>

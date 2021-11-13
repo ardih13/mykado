@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="menu_registration" type="id"/>
+    <item name="menu_schedule" type="id"/>
+    <item name="menu_history" type="id"/>
+
+
+</resources>
