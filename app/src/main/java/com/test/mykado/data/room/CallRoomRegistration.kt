@@ -33,11 +33,10 @@ object CallRoomRegistration {
         )
     }
 
-    fun insertRegistrationLocal(ctx: Context, listRegistration: MutableList<RegistrationModel>) {
-        for (i in 0 until listRegistration.size) {
-            val transaction = convertFromInsertRegistrationLocal(listRegistration.get(i))
-            callRegistrationDao(ctx).insert(transaction)
-        }
+    fun insertRegistrationLocal(ctx: Context, listRegistration: RegistrationModel) {
+        val transaction = convertFromInsertRegistrationLocal(listRegistration)
+        callRegistrationDao(ctx).insert(transaction)
+
     }
 
     //get data from local
@@ -66,7 +65,13 @@ object CallRoomRegistration {
         val registrationItemList = mutableListOf<RegistrationModel>()
 
         for (i in 0 until registrationList.size) {
-            registrationItemList.add(convertFromInsertRegistrationResponseModel(registrationList.get(i)))
+            registrationItemList.add(
+                convertFromInsertRegistrationResponseModel(
+                    registrationList.get(
+                        i
+                    )
+                )
+            )
         }
         return registrationItemList
     }
@@ -76,7 +81,13 @@ object CallRoomRegistration {
         val registrationItemList = mutableListOf<RegistrationModel>()
 
         for (i in 0 until registrationList.size) {
-            registrationItemList.add(convertFromInsertRegistrationResponseModel(registrationList.get(i)))
+            registrationItemList.add(
+                convertFromInsertRegistrationResponseModel(
+                    registrationList.get(
+                        i
+                    )
+                )
+            )
         }
         return registrationItemList
     }

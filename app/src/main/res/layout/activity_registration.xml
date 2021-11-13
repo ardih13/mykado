@@ -48,6 +48,29 @@
                 android:textColorHint="@color/color_grey_C2CED6"
                 android:textSize="@dimen/text_16" />
 
+            <TextView
+                android:id="@+id/tvDokter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/pilih_dokter"
+                android:textColor="@color/color_grey_3D505C"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/etDokter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/expression_edit_text_bgc_selector"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Dokter"
+                android:inputType="text"
+                android:lineSpacingExtra="2sp"
+                android:textColorHint="@color/color_grey_C2CED6"
+                android:textSize="@dimen/text_16" />
+
 
             <TextView
                 android:id="@+id/tvGender"
@@ -226,31 +249,6 @@
                 android:background="@drawable/expression_edit_text_bgc_selector"
                 android:focusableInTouchMode="true"
                 android:hint="Jl. Raya Bogor"
-                android:inputType="text"
-                android:lineSpacingExtra="2sp"
-                android:textColorHint="@color/color_grey_C2CED6"
-                android:textSize="@dimen/text_16" />
-
-
-            <TextView
-                android:id="@+id/tvDokter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:lineSpacingExtra="2dp"
-                android:text="@string/pilih_dokter"
-                android:textColor="@color/color_grey_3D505C"
-                android:textSize="@dimen/text_14" />
-
-
-            <EditText
-                android:id="@+id/etDokter"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/expression_edit_text_bgc_selector"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:hint="Dokter"
                 android:inputType="text"
                 android:lineSpacingExtra="2sp"
                 android:textColorHint="@color/color_grey_C2CED6"

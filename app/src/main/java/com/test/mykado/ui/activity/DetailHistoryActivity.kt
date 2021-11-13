@@ -20,14 +20,16 @@ import kotlinx.android.synthetic.main.partial_detail.*
 import kotlinx.android.synthetic.main.toolbar_detail.*
 import java.io.File
 
-class DetailHistoryActivity : AppCompatActivity() {
+class DetailHistoryActivity : BaseLocalActivity() {
 
     private var authority: String? = null
     private var fileRegistration: Bitmap? = null
     private var idRegistration = 0
     private var dataRegistration = RegistrationModel()
+    private var fromRegistration = false
 
     companion object {
+        const val KEY_FROM_REGISTRATION = "from_registration"
         const val KEY_DATA_REGISTRATION = "key_data_regis"
     }
 
@@ -36,6 +38,7 @@ class DetailHistoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_history)
         authority = BuildConfig.APPLICATION_ID
 
+        //initPermission()
         getDataIntent()
         setupUI()
     }
@@ -45,6 +48,9 @@ class DetailHistoryActivity : AppCompatActivity() {
             if (it.containsKey(KEY_DATA_REGISTRATION)) {
                 dataRegistration = it.getSerializable(KEY_DATA_REGISTRATION) as RegistrationModel
             }
+            if (it.containsKey(KEY_FROM_REGISTRATION)) {
+                fromRegistration = it.getBoolean(KEY_FROM_REGISTRATION)
+            }
         }
     }
 
@@ -53,7 +59,7 @@ class DetailHistoryActivity : AppCompatActivity() {
         tvTitle.text = "Detail"
 
         ivBack.setOnClickListener {
-            onBackPressed()
+            actionBackPressed()
         }
 
         ivShare.setOnClickListener {
@@ -74,6 +80,23 @@ class DetailHistoryActivity : AppCompatActivity() {
         idRegistration = dataRegistration.id
     }
 
+    override fun onBackPressed() {
+        actionBackPressed()
+    }
+
+    private fun actionBackPressed() {
+        if (fromRegistration) {
+            onBackToDashboard()
+        } else {
+            onBackPressed()
+        }
+    }
+
+    private fun onBackToDashboard() {
+        val intent = Intent(this, DashboardActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+    }
 
     private fun shareDetailRegistration() {
         fileRegistration = ScreenshotUtil.instance?.getBitmapFromView(

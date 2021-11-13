@@ -35,6 +35,9 @@ class RegistrationActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
     private var doctorSpesialis: String? = null
     private var doctorJadwal: String? = null
 
+    private var listData = RegistrationModel()
+    private var insert = RegistrationModel()
+
     private val listGender = ArrayList<GenderModel>()
     private var chooseGender = ""
 
@@ -103,7 +106,7 @@ class RegistrationActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
 
 
     private fun insertToOfflineDatabase() {
-        val insert = RegistrationModel()
+        insert = RegistrationModel()
         insert.name = etNama.text.toString()
         insert.gender = chooseGender
         insert.tempat_lahir = etTempatLahir.text.toString()
@@ -117,9 +120,8 @@ class RegistrationActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
         insert.dokter_jadwal = doctorJadwal
         insert.date = getDateNow()
 
-        val listData = mutableListOf<RegistrationModel>()
-        listData.add(insert)
-        CallRoomRegistration.insertRegistrationLocal(applicationContext, listData)
+        //listData.add(insert)
+        CallRoomRegistration.insertRegistrationLocal(applicationContext, insert)
     }
 
     fun getDateNow(): String {
@@ -226,8 +228,10 @@ class RegistrationActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
     }
 
     override fun onSuccessRegistration() {
-        val intent = Intent(this, HistoryActivity::class.java)
+        val intent = Intent(this, DetailHistoryActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        intent.putExtra(DetailHistoryActivity.KEY_FROM_REGISTRATION, true)
+        intent.putExtra(DetailHistoryActivity.KEY_DATA_REGISTRATION, insert)
         startActivity(intent)
     }
 

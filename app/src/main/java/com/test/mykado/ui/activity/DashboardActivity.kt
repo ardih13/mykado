@@ -12,7 +12,7 @@ import com.test.mykado.ui.adapter.DashboardMenuAdapter
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import java.util.*
 
-class DashboardActivity : AppCompatActivity() {
+class DashboardActivity : BaseLocalActivity() {
 
     private val mItemMenu = mutableListOf<MenuDashboardModel>()
     private var adapterMenu: DashboardMenuAdapter? = null
@@ -22,6 +22,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        //initPermission()
         configureMenuDashboard()
     }
 
