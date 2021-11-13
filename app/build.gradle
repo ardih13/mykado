@@ -18,8 +18,15 @@ android {
     }
 
     buildTypes {
+
+        debug {
+            manifestPlaceholders = [app_name: "MyKado"]
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
         release {
             minifyEnabled false
+            manifestPlaceholders = [app_name: "MyKado"]
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
