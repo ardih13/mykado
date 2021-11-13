@@ -230,7 +230,6 @@ class RegistrationActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
     override fun onSuccessRegistration() {
         val intent = Intent(this, DetailHistoryActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        intent.putExtra(DetailHistoryActivity.KEY_FROM_REGISTRATION, true)
         intent.putExtra(DetailHistoryActivity.KEY_DATA_REGISTRATION, insert)
         startActivity(intent)
     }

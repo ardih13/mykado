@@ -26,10 +26,8 @@ class DetailHistoryActivity : BaseLocalActivity() {
     private var fileRegistration: Bitmap? = null
     private var idRegistration = 0
     private var dataRegistration = RegistrationModel()
-    private var fromRegistration = false
 
     companion object {
-        const val KEY_FROM_REGISTRATION = "from_registration"
         const val KEY_DATA_REGISTRATION = "key_data_regis"
     }
 
@@ -48,9 +46,6 @@ class DetailHistoryActivity : BaseLocalActivity() {
             if (it.containsKey(KEY_DATA_REGISTRATION)) {
                 dataRegistration = it.getSerializable(KEY_DATA_REGISTRATION) as RegistrationModel
             }
-            if (it.containsKey(KEY_FROM_REGISTRATION)) {
-                fromRegistration = it.getBoolean(KEY_FROM_REGISTRATION)
-            }
         }
     }
 
@@ -59,7 +54,7 @@ class DetailHistoryActivity : BaseLocalActivity() {
         tvTitle.text = "Detail"
 
         ivBack.setOnClickListener {
-            actionBackPressed()
+            onBackPressed()
         }
 
         ivShare.setOnClickListener {
@@ -78,24 +73,6 @@ class DetailHistoryActivity : BaseLocalActivity() {
         tvDokter.text = dataRegistration.dokter_name
         tvSpesialis.text = dataRegistration.dokter_spesialis
         idRegistration = dataRegistration.id
-    }
-
-    override fun onBackPressed() {
-        actionBackPressed()
-    }
-
-    private fun actionBackPressed() {
-        if (fromRegistration) {
-            onBackToDashboard()
-        } else {
-            onBackPressed()
-        }
-    }
-
-    private fun onBackToDashboard() {
-        val intent = Intent(this, DashboardActivity::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        startActivity(intent)
     }
 
     private fun shareDetailRegistration() {
