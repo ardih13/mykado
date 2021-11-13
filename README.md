@@ -5,4 +5,3 @@ Fitur :
 2. Jadwal Dokter
 3. History
    - Detail History
-   - Share History
